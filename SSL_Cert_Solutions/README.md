@@ -7,8 +7,11 @@
 # Extracting Certificate and Private Key Files from a .pfx File
 
     1. Take the file you exported (e.g. certname.pfx) and copy it to a system where you have OpenSSL installed. Note: the *.pfx file is in PKCS#12 format and includes both the certificate and the private key.
+    
     2. Run the following command to export the private key: openssl pkcs12 -in certname.pfx -nocerts -out key.pem -nodes
+    
     3. Run the following command to export the certificate: openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
+    
     4. Run the following command to remove the passphrase from the private key: openssl rsa -in key.pem -out server.key 
 
 # How to Verify Password for an Encrypted SSL Certificate Key File (and remove the passphrase from private.key)
