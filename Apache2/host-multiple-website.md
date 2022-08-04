@@ -103,7 +103,7 @@ Then save and close the file.
 
 `sudo a2ensite default-ssl.conf`
 
-Now we install the SSL mod for apache, this instruction pre configure the file /etc/apache2/ports.conf with some line and the important one that say Listen 443.
+**Now we install the SSL mod for apache, this instruction pre configure the file /etc/apache2/ports.conf with some line and the important one that say Listen 443**.
 
 `sudo a2enmod ssl`
 
