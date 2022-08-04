@@ -65,7 +65,7 @@ Create the `/etc/certificate` folder to save both the **certificate** and the **
 
 Modify the SSL configuration of the Virtual Host of the domain you want to protect with SSL connection. In this tutorial the SSL configuration of the default Apache Virtual Host will be used, as an example.
 
-Open the Virtual Host SSL configuration:
+**Open the Virtual Host SSL configuration**:
 
 `$ sudo nano /etc/apache2/sites-available/default-ssl.conf`
 
@@ -93,13 +93,13 @@ You'll find a file structured as follows :
 
 Set up the ServerAdmin directive correctly by entering your email and add the ServerName directive followed by your domain or your server's IP address.
 
-Finally, change the path indicated by the SSLCertificateFile and SSLCertificateKeyFile directives, entering respectively the path of your certificate and private key .
+Finally, change the path indicated by the `SSLCertificateFile` and `SSLCertificateKeyFile` directives, entering respectively the path of your `certificate` and `private key` .
 
 You will get a result similar to the following :
 
 Then save and close the file.
 
-Site available creating a symbolic link:
+**Site available creating a symbolic link**:
 
 `sudo a2ensite default-ssl.conf`
 
