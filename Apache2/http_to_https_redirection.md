@@ -1,6 +1,6 @@
 # HTTP to HTTPS Redirection
 
-### Add the below code inside Virtualhost config file
+### Add the below code into Virtualhost config file
 
 ```
 RewriteEngine on
