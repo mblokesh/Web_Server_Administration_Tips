@@ -9,7 +9,7 @@ New-SelfSignedCertificate `
 **Add a password to the certificate**
 
 ```
-$pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
+$pwd = ConvertTo-SecureString -String **"pwd@123"** -Force -AsPlainText
 ```
 
 **Export**
@@ -17,7 +17,7 @@ $pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
 **Replace the below Thumbprint from the results of the "New-SelfSignedCertificate"**
 
 ```
-Export-PfxCertificate -cert cert:\localMachine\my\'336255C639B92978BDAA5144B92A540859932A8A' -FilePath root-authority.pfx -Password $pwd
+Export-PfxCertificate -cert cert:\localMachine\my\**336255C639B92978BDAA5144B92A540859932A8A** -FilePath root-authority.pfx -Password $pwd
 ```
 
 **Ex:Output**
