@@ -57,7 +57,7 @@ RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 </VirtualHost>
 ```
 
-Once you saved the changes, run the below command to rewrite apache2 config
+### Once you saved the changes, run the below command to rewrite apache2 config
 
 ```
 sudo a2enmod rewrite
