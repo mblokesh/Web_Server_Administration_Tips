@@ -27,7 +27,9 @@ $pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
 Export-PfxCertificate -cert cert:\localMachine\my\336255C639B92978BDAA5144B92A540859932A8A -FilePath root-authority.pfx -Password $pwd
 ```
 
-**Ex:Sample Output**
+**PFX exported location will shown in the Output as** - Directory: C:\Windows\system32 
+
+**Ex:Sample**
 
 ```
 PS C:\Windows\system32> New-SelfSignedCertificate `
