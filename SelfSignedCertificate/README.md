@@ -6,7 +6,7 @@ New-SelfSignedCertificate `
    -DnsName "remote.itechki.com" -Verbose
 ```
 
-**Add a password to the certificate**
+**Add a password to the certificate** **pwd@123**
 
 ```
 $pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
@@ -14,7 +14,7 @@ $pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
 
 **Export**
 
-**Replace the below Thumbprint from the results of the "New-SelfSignedCertificate"**
+**Replace the below Thumbprint from the results of the "New-SelfSignedCertificate"** **336255C639B92978BDAA5144B92A540859932A8A**
 
 ```
 Export-PfxCertificate -cert cert:\localMachine\my\336255C639B92978BDAA5144B92A540859932A8A -FilePath root-authority.pfx -Password $pwd
