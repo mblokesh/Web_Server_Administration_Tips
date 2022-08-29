@@ -1,3 +1,4 @@
+```
 <VirtualHost *:80>
      ServerAdmin megamindtamizhan@itechki.com
      DocumentRoot /var/www/html/itechki/
@@ -21,3 +22,4 @@ RewriteCond %{SERVER_NAME} =www.itechki.com
 RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 
 </VirtualHost>
+```
