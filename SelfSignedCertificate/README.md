@@ -2,8 +2,8 @@
 
 ### Prerequisites
 
-> A Windows computer with Windows PowerShell 5.1 or the latest PowerShell 7 (v7.1.3 as of this writing)
-> Your user account must have administrator rights on the local machine.
+* A Windows computer with Windows PowerShell 5.1 or the latest PowerShell 7 (v7.1.3 as of this writing)
+* Your user account must have administrator rights on the local machine.
 
 **Open Powershell - before run the below command replace your DNSName and then run**
 
