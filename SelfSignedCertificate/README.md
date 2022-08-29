@@ -1,4 +1,11 @@
-# How to create a self signed certificate on a Windows Server
+# Do you need an SSL certificate for website development or testing applications? - Instead of buying expensive SSL why not create a self signed certificate on a Windows Server.
+
+### Prerequisites
+
+> A Windows computer with Windows PowerShell 5.1 or the latest PowerShell 7 (v7.1.3 as of this writing)
+> Your user account must have administrator rights on the local machine.
+
+**Open Powershell - before run the below command replace your DNSName and then run**
 
 ```
 New-SelfSignedCertificate `
@@ -20,7 +27,7 @@ $pwd = ConvertTo-SecureString -String "pwd@123" -Force -AsPlainText
 Export-PfxCertificate -cert cert:\localMachine\my\336255C639B92978BDAA5144B92A540859932A8A -FilePath root-authority.pfx -Password $pwd
 ```
 
-**Ex:Output**
+**Ex:Sample Output**
 
 ```
 PS C:\Windows\system32> New-SelfSignedCertificate `
