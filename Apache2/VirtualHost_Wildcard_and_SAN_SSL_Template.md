@@ -1,3 +1,4 @@
+```
 <IfModule mod_ssl.c>
 <VirtualHost *:443>
          ServerAdmin zahir@itechki.com
@@ -90,3 +91,4 @@ SSLCertificateChainFile /etc/apache2/ssl/itechki/itechki.interm2023.crt
 
 </VirtualHost>
 </IfModule>
+```
